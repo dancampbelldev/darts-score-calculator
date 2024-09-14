@@ -57,6 +57,7 @@ clearYes.addEventListener('click', () => {
   weeklyAverage = [];
   dailyScores = [];
   recordedList.innerHTML = '';
+  weekScoreList.innerHTML = '';
   graphDayScore();
   dayOne.innerText = '';
   dayTwo.innerText = '';
