@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  border: px solid;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#clear-data-box {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: rgb(196, 148, 148);
+  border: 2px solid rgb(90, 90, 90);
+  font-size: 1.2em;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -150px;
+}
+
+#clear-alert-text {
+  padding: 10px 5px;
+  font-weight: bold;
+}
+
+#calc-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#main-calc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 400px;
+  margin-bottom: 10px;
+  background-image: url(./Images/Darts1.jpg);
+  border-radius: 10px;
+}
+
+#calc-title {
+  padding-top: 20px;
+  font-size: 1.6em;
+  color: white;
+}
+
+#score-input {
+  margin-top: 15px;
+  height: 35px;
+  font-size: 1.5em;
+  width: 80px;
+  background-color: hsl(216, 26%, 65%);
+  border: none;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 0 10px;
+  color: white;
+  height: 35px;
+  font-size: 1.5em;
+  background-color: rgb(26, 104, 26);
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.game-button {
+  display: block;
+  height: 35px;
+  width: 150px;
+  padding: 0;
+  text-align: center;
+  border: 2px solid darkgrey;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.game-button:visited {
+  color: white;
+}
+
+
+.record {
+  background-color: rgb(214, 68, 68);
+}
+
+.clear-button-yes {
+  background-color: rgb(26, 104, 26);
+  width: 80px;
+  margin: 20px 10px;
+  font-size: 1.2em;
+}
+
+.clear-button-no {
+  background-color: rgb(214, 68, 68);
+  width: 80px;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.clear-data-button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background-color: red;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 100px;
+}
+
+.days-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.day-box {
+  width: 190px;
+  background-color: rgb(220, 217, 226);
+  border-radius: 5px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#score-display {
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 1.5em;
+  height: 50px;
+  width: 160px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(220, 217, 226);
+}
+
+#recorded-list-box {
+  width: 300px;
+  height: 75px;
+  background-color: rgb(180, 178, 185);
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+#recorded-list {
+  width: 150px;
+  font-size: 1.5em;
+}
+
+#last-week-title {
+  width: 150px;
+}
+
+.past-list {
+  font-size: 1.5em;
+  padding-top: 5px;
+  text-align: center;
+
+}
+
+.day-title {
+  padding-top: 5px;
+}
+
+.day-text {
+  padding-top: 10px;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#week-score-list {
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 10px;
+  max-height: 120px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#previous-week-title {
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+#past-week-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.week-average-list {
+  background-color: rgb(220, 217, 226);
+  padding: 5px 0;
+  border-bottom: 1px solid gray;
+}
+
+#graphs-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#day-graph {
+  width: 100%;
+  height: 180px;
+  background: url(./Images/GraphBackground.png);
+  border-left: 2px solid rgb(122, 122, 122);
+  border-bottom: 2px solid rgb(122, 122, 122);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  gap: 1px;
+}
+
+#daily-graph-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.day-graph-bar {
+  background-color: rgb(26, 104, 26);
+  width: 19px;
+  margin-top: auto;
+  border-radius: 3px 3px 0 0;
+  
+}

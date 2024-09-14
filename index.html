@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Score Calculator</title>
+    <link rel="stylesheet" href="./styles.css" >
+  </head>
+  <body>
+    <main>
+        <div id="clear-data-box">
+          <p id="clear-alert-text">Are you sure you want to clear all data?</p>
+          <button class="button clear-button-yes" id="clear-yes">Yes</button>
+          <button class="button clear-button-no" id="clear-no">No</button>
+        </div>
+        <a class="button game-button" href="./gamescore.html">New Game</a>
+      <div id="calc-container">
+        <div id="main-calc">
+          <h2 id="calc-title">Average Score Calculator</h2>
+          <input id="score-input" type="number" min="0" max="180" placeholder="..." />
+          <button class="button" id="scoreBtn">Add Score</button>
+          <p id="score-display"></p>
+          <button class="button record" id="recordBtn">Record Score</button>
+        </div>
+        <div class="days-container">
+          <div class="day-box">
+            <h3 class="day-title">Day 1</h3>
+            <p class="day-text" id="dayOne"></p>
+          </div>
+          <div class="day-box">
+            <h3 class="day-title">Day 2</h3>
+            <p class="day-text" id="dayTwo"></p>
+          </div>
+          <div class="day-box">
+            <h3 class="day-title">Day 3</h3>
+            <p class="day-text" id="dayThree"></p>
+          </div>
+          <div class="day-box">
+            <h3 class="day-title">Day 4</h3>
+            <p class="day-text" id="dayFour"></p>
+          </div>
+          <div class="day-box">
+            <h3 class="day-title">Day 5</h3>
+            <p class="day-text" id="dayFive"></p>
+          </div>
+          <div class="day-box">
+            <h3 class="day-title">Day 6</h3>
+            <p class="day-text" id="daySix"></p>
+          </div>
+          <div class="day-box">
+            <h3 class="day-title">Day 7</h3>
+            <p class="day-text" id="daySeven"></p>
+          </div>
+        </div>
+        <div id="recorded-list-box">
+          <h3 id="last-week-title">This Week's Average</h3>
+          <p id="recorded-list"></p>
+        </div>
+        <div id="past-week-box">
+          <h3 id="previous-week-title">Previous Week Averages</h3>
+          <div id="week-score-list">
+            <!-- Weekly scores HTML dynamically created here in JS -->
+          </div>
+        </div>
+      </div>
+      <div id="graphs-container">
+        <div id="day-graph">
+          <!-- Graph bars dynamically created here in JS -->
+        </div>
+        <h3 id="daily-graph-heading">Daily Score Graph (Last 20 Days)</h3>
+        <button class="button clear-data-button" id="clear-data-button">Clear All Data</button>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <div>
+
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

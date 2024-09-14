@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Calculator</title>
+  <link rel="stylesheet" href="./stylesgame.css">
+</head>
+<body>
+  <a class="button game-button" href="./index.html">Back</a>
+  <div class="pre-game-container">
+    <div class="pre-game-box" id="pre-game-box">
+      <h2 id="player-name-title">Please enter player name/s</h2>
+      <form action="" id="name-form">
+        <input type="text" maxlength="8" class="name-input" id="name-input1" placeholder="Player 1 name...">
+        <input type="text" maxlength="8" class="name-input not-displayed" id="name-input2" placeholder="Player 2 name...">
+        <button class="button set-player" id="name-set-button">Start!</button>
+      </form>
+      <button class="button start-score-button" id="score-set-button">501</button>
+      <button class="button set-player" id="add-remove-player-button">Two Players</button>
+      <input class="not-displayed" id="leg-set-input" type="number" max="8" min="1" />
+      <p class="not-displayed" id="leg-text">Set legs</p>
+    </div>
+  </div>
+  <div class="score-container">
+    <div id="score-box" class="score-box">
+      <h2 class="player-title" id="player-name"></h2>
+      <input type="number" class="score-input" id="score-input" max="180" min="0" placeholder="...">
+      <button class="button score-button" id="score-button1">Enter Score</button>
+      <h3 class="score-display" id="score-display"><!-- Score HTML dynamically displayed here --></h3>
+    </div>
+  </div>
+  <div id="leg-score-tracker">
+    <!-- HTML dynamically generated here -->
+  </div>
+  <script src="./scriptgame.js"></script>
+</body>
+</html>
