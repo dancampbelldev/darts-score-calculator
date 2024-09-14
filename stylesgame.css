@@ -1,7 +1,6 @@
 *, *::before, *::after {
   margin: 0;
   box-sizing: border-box;
-  border: px solid;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 }
 
 .pre-game-box {
-  margin-top: 10px;
+  margin: 10px 10px;
   min-height: 400px;
   max-height: 500px;
   width: 400px;
@@ -75,7 +74,7 @@ body {
 }
 
 #add-remove-player-button {
-  width: 130px;
+  width: 140px;
 }
 
 .score-container {
@@ -87,7 +86,7 @@ body {
 }
 
 #score-box {
-  margin-top: 50px;
+  margin: 50px 10px 0 10px;
   width: 400px;
   height: 400px;
   border-radius: 15px;
@@ -121,6 +120,7 @@ body {
 
 .start-score-button {
   background-color: rgb(179, 81, 81);
+  color: black;
 }
 
 .game-button {
@@ -145,6 +145,7 @@ body {
 
 .set-player {
   background-color: rgb(194, 182, 19);
+  color: black;
 }
 
 .player-title {
@@ -161,6 +162,8 @@ body {
 
 #score-button1 {
   margin-top: 10px;
+  color: black;
+  width: 140px;
 }
 
 #score-track-section {
