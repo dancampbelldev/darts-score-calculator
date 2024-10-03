@@ -105,6 +105,7 @@ function legUpdate() {
 function exitGame(name) {
   // Upon player winning match, game exits to pre game box
   // Make scorebox disappear and make pre game box appear
+  scoreDisplay.style.fontSize = '28px';
   scoreDisplay.innerHTML = `${name.toUpperCase()} HAS WON THE MATCH!`;
   setTimeout(() => {
     preGameBox.style.display = 'flex';
@@ -114,6 +115,7 @@ function exitGame(name) {
     leg2 = 0;
     legUpdate();
     scoreInput.value = '';
+    scoreDisplay.style.fontSize = '38px';
   }, '3000');
 }
 
