@@ -38,7 +38,7 @@ body {
   margin: 5px auto 50px auto;
   margin-top: 5px;
   align-items: center;
-  width: 420px;
+  width: 390px;
   margin-bottom: 50px;
 }
 
@@ -47,7 +47,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 300px;
-  width: 400px;
+  width: 385px;
   margin: 0 10px 10px 10px;
   background-image: url(./Images/Darts1.jpg);
   border-radius: 10px;
