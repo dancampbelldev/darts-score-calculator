@@ -9,6 +9,7 @@ body {
 
 .pre-game-container {
   display: flex;
+  width: 400px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
