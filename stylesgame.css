@@ -1,7 +1,6 @@
 *, *::before, *::after {
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid;
 }
 
 body {
@@ -38,7 +37,7 @@ body {
   text-align: center;
   margin-top: 40px;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 #name-form {
